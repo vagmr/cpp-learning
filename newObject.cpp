@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+
 class Xg
 {
 private:
@@ -18,6 +19,16 @@ public:
 };
 int main()
 {
-    Xg x;
-    std::cout << x.GetName() << std::endl;
+    Xg *x3;
+    Xg x; // 在栈上创建类实例，出栈时销毁
+    // 也可以写成Xg x = Xg("cghss");
+    {
+        Xg *x1 = new Xg("cghss"); // new返回的是在堆上的内存地址
+        // 需要用到delete手动清理 delete x1;
+        x3 = x1;
+    }
+    std::cout << x3->GetName() << std::endl; // 此时已出x1的作用域,x1将不可见，但x1不会被销毁，依旧存在内存中
+    delete x3;
+    /*x3和x1指向的是同一个堆上的对象。在代码中，通过x3 = x1;将x1的值赋给了x3，它们指向相同的内存地址。
+    因此，如果在删除x3之后再删除x1，实际上是在重复删除同一个对象，这是不必要的。 */
 }
