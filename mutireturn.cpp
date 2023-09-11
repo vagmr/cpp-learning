@@ -19,5 +19,9 @@ int main()
     std::tie(name1, age1) = create();
     std::cout << "---------------------------" << std::endl;
     std::cout << name1 << "," << age1 << std::endl;
+    // 使用结构体
+    std::cout << "---------------------------" << std::endl;
+    auto [name2, age2] = create();
+    std::cout << name2 << "," << age2 << std::endl;
     std::cin.get();
 }
