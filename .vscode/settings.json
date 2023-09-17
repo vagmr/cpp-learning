@@ -1,4 +1,7 @@
 {
+    "code-runner.executorMap": {
+        "cpp": "cd $dir && g++ -std=c++17 $fileName -o app\\$fileNameWithoutExt && app\\$fileNameWithoutExt",
+    },
     "files.associations": {
         "array": "cpp",
         "atomic": "cpp",
@@ -45,6 +48,9 @@
         "chrono": "cpp",
         "ctime": "cpp",
         "ratio": "cpp",
-        "thread": "cpp"
+        "thread": "cpp",
+        "variant": "cpp",
+        "any": "cpp"
     },
+    "C_Cpp.errorSquiggles": "enabled",
 }
