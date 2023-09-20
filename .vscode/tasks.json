@@ -3,7 +3,7 @@
         {
             "type": "cppbuild",
             "label": "C/C++: g++.exe 生成活动文件",
-            "command": "H:\\mingw64\\bin\\g++.exe",
+            "command": "H:\\mingw64 13.1.0\\bin\\g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-std=c++17",
