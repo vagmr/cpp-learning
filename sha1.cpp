@@ -2,7 +2,7 @@
 #include <string>
 #include <cstdint>
 
-#define pause() std::cin.get()
+#define pause std::cin.get()
 #define open_curly {
 // 辅助函数
 #define SHA1_ROTL(bits, word) (((word) << (bits)) | ((word) >> (32 - (bits))))
@@ -90,6 +90,7 @@ for (int i = 0; i < 5; ++i)
 }
 std::cout << std::endl;
 std::cout << "end" << std::endl;
-std::cin.get();
+pause;
+pause;
 return 0;
 }

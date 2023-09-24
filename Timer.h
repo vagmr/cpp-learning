@@ -9,6 +9,11 @@ public:
     {
         start_timerPoint = std::chrono::high_resolution_clock::now();
     }
+    Timer(const char *info)
+    {
+        start_timerPoint = std::chrono::high_resolution_clock::now();
+        m_info = info;
+    }
     ~Timer()
     {
         stop();
@@ -20,9 +25,14 @@ public:
         long long end = std::chrono::time_point_cast<std::chrono::microseconds>(end_timePoint).time_since_epoch().count();
         auto duration = end - start;
         double ms = duration * 0.001;
+        if (m_info.size() > 0)
+        {
+            std::cout << m_info << ": ";
+        }
         std::cout << "duration=" << ms << "ms(" << duration << " us)" << std::endl;
     }
 
 private:
     std::chrono::_V2::system_clock::time_point start_timerPoint, end_timePoint;
+    std::string m_info;
 };

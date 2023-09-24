@@ -14,5 +14,6 @@ int main()
     int y = *(int *)((char *)&e + 4);
     std::cout << y << std::endl;
     std::cout << c[1] << "," << c[0] << std::endl;
+
     std::cin.get();
 }

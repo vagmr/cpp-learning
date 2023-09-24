@@ -3,8 +3,8 @@ int main()
 {
     char a[12] = "hello world";
     a[1] = 'x';
-    char *b = "hello world";
-    b[1] = 'f';
+    const char *b = "hello world";
+    const char *c = u8"文档大小";
     std::cout << a << std::endl;
     std::cout << b << std::endl;
 }
