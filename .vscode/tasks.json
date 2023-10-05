@@ -6,7 +6,7 @@
             "command": "H:\\mingw64 13.1.0\\bin\\g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
-                "-std=c++17",
+                "-std=c++20",
                 "-g",
                 "${file}",
                 "-o",
