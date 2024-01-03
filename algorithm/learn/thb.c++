@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+
 int f(int start, std::vector<int> &arr, int n)
 {
     if (start >= n)

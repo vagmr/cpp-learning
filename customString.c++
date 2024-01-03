@@ -29,6 +29,7 @@ public:
     {
         return m_buffer[size];
     }
+
     // 实现拷贝构造函数
     String(const String &other) : m_size(other.m_size)
     {
