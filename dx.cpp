@@ -1,5 +1,6 @@
 #include <iostream>       // 包含输入输出流库
 #include <mingw.thread.h> // 包含MinGW线程库（假设你正在使用MinGW编译器）
+#include <GLFW/glfw3.h>
 
 static bool is_continue = true; // 定义一个静态的布尔变量is_continue，用于控制线程是否继续运行
 
