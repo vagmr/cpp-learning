@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="open">res/exit.svg</file>
+        <file alias="down">res/TdesignCaretDownSmall.svg</file>
+        <file alias="bg">res/new.png</file>
+        <file alias="mbg">res/11.jpg</file>
+        <file alias="wbg">res/photo-1554629947-334ff61d85dc.webp</file>
+    </qresource>
+</RCC>
